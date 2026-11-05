@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-mcp
-  version: "0.62.4"
+  version: "0.63.0"
   python_min: "3.10"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_mcp-${{ version }}.tar.gz
-  sha256: 7e21dc7f2eab9827382efa988c60661334634d6ec7248ad88e8b223b9b249477
+  sha256: 32d36d043a531273272c79ec0e87260a5dc876656d394ada311a691a8cc3fd53
 
 build:
   number: 0
@@ -27,9 +27,8 @@ requirements:
     - python >=${{ python_min }}
     - opentelemetry-api >=1.38.0,<2.0.0
     - opentelemetry-instrumentation >=0.59b0
-    - opentelemetry-semantic-conventions >=0.59b0
+    - opentelemetry-semantic-conventions >=0.63b1
     - opentelemetry-semantic-conventions-ai >=0.5.1,<0.6.0
-    - opentelemetry-exporter-otlp >=1.34.1,<2
     - mcp >=1.26.0,<2
 
 tests:
