@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-mcp
-  version: "0.63.0"
-  python_min: "3.10"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_mcp-${{ version }}.tar.gz
-  sha256: 32d36d043a531273272c79ec0e87260a5dc876656d394ada311a691a8cc3fd53
+  sha256: c87f328351b1869296def7bf9d307f58cd81e208fccde0ec2d9a5029c6ecf9aa
 
 build:
   number: 0
